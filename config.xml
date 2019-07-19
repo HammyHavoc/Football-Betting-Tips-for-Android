@@ -34,6 +34,7 @@
 	<plugin name="cordova-plugin-statusbar" source="npm" />
 	<plugin name="cordova-build-architecture" spec="https://github.com/MBuchalik/cordova-build-architecture.git#v1.0.1" source="git" />
 	<plugin name="onesignal-cordova-plugin" source="npm" />
+	<plugin name="firebase" source="npm" />
 	<plugin name="cordova-plugin-android-permissions" source="npm" />
 	<plugin name="phonegap-plugin-push" spec="https://github.com/phonegap/phonegap-plugin-push.git" source="git" />
 
