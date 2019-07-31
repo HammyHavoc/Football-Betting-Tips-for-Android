@@ -26,7 +26,7 @@
 		<% }); %>  
 	</ul>
 	<% }else{ %>
-		<div class='content-message'>No Culture post found</div>
+		<div class='content-message'>No Tips Currently</div>
 	<% } %>
 
 	<h1>Offers</h1>
@@ -38,7 +38,7 @@
 
 						<% if(  post.thumbnail && post.thumbnail.src && post.thumbnail.src.length ){ %>
 
-							<img class="content-thumbnail" src="<%= post.thumbnail.thumb %>" onerror="displayDefaultImage(this);" />
+							<img class="content-thumbnail" src="<%= post.thumbnail.src %>" onerror="displayDefaultImage(this);" />
 
 						<% } %>	
 
@@ -49,7 +49,7 @@
 			<% }); %>  
 		</ul>
 	<% }else{ %>
-		<div class='content-message'>No Travel post found</div>
+		<div class='content-message'>No Offers Currently</div>
 	<% } %>
         
 </div>
