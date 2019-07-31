@@ -7,7 +7,7 @@ define( function ( require ) {
 		wp_ws_url : 'https://www.footballfreetips.com/wp-appkit-api/football-betting-tips-2',
 		wp_url : 'https://www.footballfreetips.com',
 		theme : 'fbtapp',
-		version : '1.4',
+		version : '1.5',
 		app_type : 'phonegap-build',
 		app_title : 'Football Betting Tips',
 		app_platform : 'android',
