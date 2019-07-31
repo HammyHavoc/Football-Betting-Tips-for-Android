@@ -35,13 +35,13 @@
 			<% _.each( offers_posts, function( post ){ %>
 				<li class="has-ripple-feedback">
 
-
+					<a href="<%= TemplateTags.getPostLink( post.id, 'posts' ) %>">
 						<% if(  post.thumbnail && post.thumbnail.src && post.thumbnail.src.length ){ %>
 
 							<img class="content-thumbnail" src="<%= post.thumbnail.src %>" onerror="displayDefaultImage(this);" />
 
 						<% } %>	
-
+						</a>
 						<h3><a href="<%= TemplateTags.getPostLink( post.id, 'posts' ) %>"><%= post.title %></a></h3>
 
 
