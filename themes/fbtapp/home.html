@@ -1,0 +1,55 @@
+<!--
+ * Content is enclosed in <div id="app-content-wrapper"><div id="app-screen"></div></div>
+ * Subhead: is added by add-custom-data.php in the theme's php folder / It expects that the post has a subhead custom field
+ * Handler for image loading error: displayDefaultImage() added in functions.js as a template's parameter
+-->
+
+<div id="content-home" class="content list-template">
+    
+	<h2>Tips</h2>
+	<% if( tips_posts.length ){ %>
+	<ul>
+		<% _.each( tips_posts, function( post ){ %>
+			<li class="has-ripple-feedback">
+				
+
+					<% if(  post.thumbnail && post.thumbnail.src && post.thumbnail.src.length ){ %>
+
+                        <img class="content-thumbnail" src="<%= post.thumbnail.thumb %>" onerror="displayDefaultImage(this);" />
+
+                    <% } %>	
+					
+					<h3><a href="<%= TemplateTags.getPostLink( post.id, 'posts' ) %>"><%= post.title %></a></h3>
+                        
+				
+			</li>
+		<% }); %>  
+	</ul>
+	<% }else{ %>
+		<div class='content-message'>No Culture post found</div>
+	<% } %>
+
+	<h2>Offers</h2>
+	<% if( offers_posts.length ){ %>
+		<ul>
+			<% _.each( offers_posts, function( post ){ %>
+				<li class="has-ripple-feedback">
+
+
+						<% if(  post.thumbnail && post.thumbnail.src && post.thumbnail.src.length ){ %>
+
+							<img class="content-thumbnail" src="<%= post.thumbnail.thumb %>" onerror="displayDefaultImage(this);" />
+
+						<% } %>	
+
+						<h3><a href="<%= TemplateTags.getPostLink( post.id, 'posts' ) %>"><%= post.title %></a></h3>
+
+
+				</li>
+			<% }); %>  
+		</ul>
+	<% }else{ %>
+		<div class='content-message'>No Travel post found</div>
+	<% } %>
+        
+</div>
