@@ -2,7 +2,7 @@
 <widget xmlns       = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.tstlimited.footballbettingtips"
-        versionCode = "23"
+        versionCode = "24"
         version     = "2.4" >
 
 	<name>Football Betting Tips</name>
