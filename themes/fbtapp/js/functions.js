@@ -385,6 +385,11 @@ define([
         // Actions shared by single and page
         if (current_screen.screen_type=="single" || current_screen.screen_type=="page") {
 
+        $( '#share-button' ).attr( 'data-url', currentScreenObject.permalink );
+        $( '#share-button' ).attr( 'data-title', currentScreenObject.title );
+         //Comment the following if you don't need to share post featured image:
+        $( '#share-button' ).attr( 'data-thumbnail', currentScreenObject.thumbnail && currentScreenObject.thumbnail.src ? currentScreenObject.thumbnail.src : '' );
+
             // Redirect all content hyperlinks clicks
             // @todo: put it into prepareContent()
             $("#app-layout").on("click", ".single-content a", openInBrowser);
@@ -944,3 +949,54 @@ define([
     }
     
 });
+
+// Finger releases the share button
+function shareButtonTapOff( e ) {
+
+    e.preventDefault();
+
+    // Get data to be shared
+
+    var shareUrl = null;
+    if ( $( this ).attr( 'data-url' ) != '' ) {
+        shareUrl = $( this ).attr( 'data-url' );
+    }
+                
+    var shareMessage = "I've just discovered a great article and I think it may interest you";
+    if ( shareUrl != null ) {
+        shareMessage += ": " + shareUrl;
+    } else {
+        shareMessage += '.';
+    }
+        
+    var shareSubject = null;
+    if ( $( this ).attr( 'data-title' ) != '' ) {
+        shareSubject = $( this ).attr( 'data-title' );
+    }
+
+    var shareThumbnail = null;
+    //Comment the following if you don't need to share post featured image:
+    if ( $( this ).attr( 'data-thumbnail' ) != '' ) {
+        shareThumbnail = $( this ).attr( 'data-thumbnail' );
+    }
+
+    // Launch OS sharing center (and check if the necessary Phonegap plugin is available - https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin/)
+    try {
+            
+        window.plugins.socialsharing.share(
+            shareMessage, // Message
+            shareSubject, // Subject
+            shareThumbnail, // Image
+            shareUrl, // Link
+            function( result ) { /*alert( 'Success' );*/ }, // Success feedback
+            function( result ) { /*alert( 'Failed' );*/ }  // Error feedback
+        );
+
+    } catch( err ) {
+        console.log( "Sharing plugin is not available - you're probably in the browser" );
+    }
+ 
+}
+
+// Share button events
+$( "#app-layout" ).on( "touchend", "#share-button", shareButtonTapOff );
