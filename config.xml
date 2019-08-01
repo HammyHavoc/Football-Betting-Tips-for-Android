@@ -3,7 +3,7 @@
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.tstlimited.footballbettingtips"
         versionCode = "23"
-        version     = "2.3" >
+        version     = "2.4" >
 
 	<name>Football Betting Tips</name>
 
