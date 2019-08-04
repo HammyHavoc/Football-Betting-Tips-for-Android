@@ -30,7 +30,7 @@
 	margin: 19px 0px 17px 0px;
 	font-size: 18px;
     line-height: 24px;
-	font-family:'Roboto Bold',sans-serif;
+	font-family:'Dosis Regular',sans-serif;
 }
 
 
@@ -40,7 +40,7 @@
  */
 
 .single-content p {
-    font-family: 'PT Serif Regular', Georgia, serif;
+    font-family: 'Dosis Regular', Georgia, serif;
     color: #4c4c4c;
 	font-size: 17px;
 	line-height: 27px;
@@ -102,7 +102,7 @@
  */
 
 .single-content ul, .single-content ol {
-    font-family: 'PT Serif Regular', Georgia, serif;
+    font-family: 'Dosis Regular', Georgia, serif;
 	font-size: 17px;
 	line-height: 27px;
 	margin: -5px 0px 20px 0px;
@@ -131,7 +131,7 @@
 	font-size: 17px;
 	line-height: 27px;
 	text-align: left;
-    font-family: 'PT Serif Regular', Georgia, serif;
+    font-family: 'Dosis Regular', Georgia, serif;
     color: #4c4c4c;
 	font-size: 17px;
 	line-height: 27px;
@@ -243,7 +243,7 @@
     text-transform: uppercase;
     line-height: 13px;
     margin-bottom: 9px;
-    font-family:'Roboto Bold',sans-serif;
+    font-family:'Dosis Regular',sans-serif;
 }
 
 
@@ -258,7 +258,7 @@
     border-radius: 4px;
     padding: 5px 10px 5px 10px;
     background-color: #fcfcfc;
-    font-family: 'PT Serif Regular', Georgia, serif;
+    font-family: 'Dosis Regular', Georgia, serif;
     color: #4c4c4c;
 	font-size: 17px;
 	line-height: 27px;
@@ -273,7 +273,7 @@ a.button5{
     border-radius:0.12em;
     box-sizing: border-box;
     text-decoration:none;
-    font-family:'Roboto',sans-serif;
+    font-family:'Dosis Regular',sans-serif;
     font-weight:300;
     color:#000000;
     text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
