@@ -262,7 +262,7 @@ a {
  */
 
 .app-header, .panel-header {
-	background-color: #424242;
+	background-color: #000000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.26);
     color: #fff;
 }
