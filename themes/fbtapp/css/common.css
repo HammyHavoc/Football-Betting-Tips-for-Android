@@ -24,7 +24,7 @@
 }
 
 #content-home h3 {
-  font: bold 20px/1.3 Helvetica, Verdana, sans-serif;
+  font: bold 20px/1.3 Dosis Regular, Verdana, sans-serif;
   display:inline;
 }
  
@@ -61,8 +61,8 @@
  */
 
 @font-face {
-	font-family : "PT Serif Regular";
-	src : url('../fonts/PT-Serif-Regular.ttf');
+	font-family : "Dosis Regular";
+	src : url('../fonts/Dosis-Regular.ttf');
 }
 
 
@@ -82,7 +82,7 @@ body {
 	text-rendering: optimizelegibility;     /* Enables kerning and optional ligatures */
 	-webkit-text-size-adjust: 100%;         /* Blocks text auto-scaling (eg. when switching from portrait to landscape) */
 	-webkit-font-smoothing: antialiased;    /* Enhances font aliasing */
-	font-family: "Roboto",sans-serif;
+	font-family: "Dosis Regular",sans-serif;
 }
 
 a {
@@ -277,7 +277,7 @@ a {
 	font-weight: 400;
 	-webkit-user-select: none; /* Block selection with a long touch */
 	font-size: 18px;
-	font-family: "Roboto",sans-serif;
+	font-family: "Dosis Regular",sans-serif;
 }
 
 
@@ -303,7 +303,7 @@ a {
     z-index: 500;
     background-color: #333;
     color: #f9f9f9;
-    font-family: "Roboto Medium",sans-serif;
+    font-family: "Dosis Regular",sans-serif;
     margin: 0 auto;
     right: 0;
     border-radius: 40px 40px 40px 40px;
@@ -377,7 +377,7 @@ a {
 	text-decoration: none;
 	-webkit-user-select: none; /* Block user selection */
 	-webkit-touch-callout: none; /* Work on iOS to block hyperlink menu */
-    font-family: 'Roboto Medium', sans-serif;
+    font-family: 'Dosis Regular', sans-serif;
     color: rgba(0,0,0,.87);
     font-size: 14px;
     height: 48px;
@@ -392,7 +392,7 @@ a {
 	text-decoration: none;
 	-webkit-user-select: none; /* Block user selection */
 	-webkit-touch-callout: none; /* Work on iOS to block hyperlink menu */
-    font-family: 'Roboto Medium', sans-serif;
+    font-family: 'Dosis Regular', sans-serif;
     color: #424242;
     font-size: 14px;
     height: 48px;
