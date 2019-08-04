@@ -268,27 +268,31 @@
 a.button5{
     display:inline-block;
     padding:0.6em 3.6em;
-    border:0.1em solid #000000;
     margin:0 0.2em 0.2em 0;
-    border-radius:0.12em;
-    box-sizing: border-box;
     text-decoration:none;
     font-family:'Dosis Regular',sans-serif;
     font-weight:300;
-    color:#000000;
-    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
-    background-color:#FFFFFF;
     text-align:center;
     transition: all 0.15s;
     }
     a.button5:hover{
     text-shadow: 0 0 2em rgba(255,255,255,1);
     color:#FFFFFF;
-    border-color:#000000;
     }
     @media all and (max-width:30em){
      a.button5{
     display:block;
     margin:0.4em auto;
      }
-    }
+    } 
+.share-button{
+	position: absolute;
+	float: left;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image:url('../img/share.svg');
+    background-size: 24px 24px;
+	width:48px;
+	height:48px;
+    margin: 4px 0px 4px 0px;
+}
