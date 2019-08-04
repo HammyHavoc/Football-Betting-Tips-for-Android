@@ -45,7 +45,7 @@
 }
  
 #content-home li:hover {
-  background: #eee;
+  background: #FDF703;
   cursor: pointer;
 }
 
@@ -115,7 +115,7 @@ a {
     z-index: 0; /* Positionned under the app's canvas / z-index relative to #app-layout */
     overflow-y: scroll;
     -webkit-overflow-scrolling:touch; /* Enables inertial scrolling */
-    background-color: #FCFCFC;
+    background-color: #000000;
 }
 
 /* Encloses nav bar, content and toolbar  */
@@ -378,7 +378,7 @@ a {
 	-webkit-user-select: none; /* Block user selection */
 	-webkit-touch-callout: none; /* Work on iOS to block hyperlink menu */
     font-family: 'Dosis Regular', sans-serif;
-    color: rgba(0,0,0,.87);
+    color: #FDF703;
     font-size: 14px;
     height: 48px;
     line-height: 48px;
@@ -386,7 +386,7 @@ a {
 }
 
 .menu-items li.menu-active-item a {
-	background-color: #F2F2F2;
+	background-color: #FDF703;
 	white-space: nowrap;
 	display: block;
 	text-decoration: none;
