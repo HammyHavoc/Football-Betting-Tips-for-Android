@@ -25,7 +25,6 @@ define([
     'theme/js/moment.min',
     'theme/js/velocity.min',
     'theme/js/jquery.fitvids'
-    'theme/js/forms'
     ], function($,App,Storage,TemplateTags,Config,Moment,Velocity) {
 
 
