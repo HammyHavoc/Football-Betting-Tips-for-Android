@@ -962,7 +962,7 @@ function shareButtonTapOff( e ) {
         shareUrl = $( this ).attr( 'data-url' );
     }
                 
-    var shareMessage = "I've just discovered a great article and I think it may interest you";
+    var shareMessage = "I've just discovered something great and I think it may interest you";
     if ( shareUrl != null ) {
         shareMessage += ": " + shareUrl;
     } else {
