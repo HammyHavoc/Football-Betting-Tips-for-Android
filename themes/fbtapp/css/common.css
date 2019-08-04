@@ -198,8 +198,6 @@ a {
     margin: 4px 0px 4px 0px;
 }
 
-
-
 /*
  * Menu button
  */
@@ -279,8 +277,6 @@ a {
 	font-size: 18px;
 	font-family: "Dosis Regular",sans-serif;
 }
-
-
 
 /*
  * Toast Message
@@ -401,7 +397,7 @@ a {
 }
 
 #app-menu .ripple-drop {
-    background-color: #F2F2F2;
+    background-color: #FDF703;
 }
 
 

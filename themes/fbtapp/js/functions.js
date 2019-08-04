@@ -419,7 +419,7 @@ define([
          */
         
         if (current_screen.screen_type === 'single') { // @todo handle page correctly
-            
+            $( '#share-button' ).attr( 'data-url', '' ).attr( 'data-title', '' ).attr( 'data-thumbnail', '' );
             // Remove all iframes to get a smooth closing transition (notably because of YouTube iframes)
             $('#' + currentContainerId + ' ' + 'iframe').remove();
     
